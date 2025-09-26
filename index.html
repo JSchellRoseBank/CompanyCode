@@ -8,17 +8,19 @@
 			name="description"
 			content="Compassionate funeral services in Cape Town. Grim Reaper & Co provides dignified funeral planning, products, and grief support."
 		/>
+		<link rel="stylesheet" href="./styles/base.css" />
+		<link rel="stylesheet" href="./styles/index.css" />
 	</head>
 	<body>
 		<header>
-			<h1>Grim Reaper &amp; Co</h1>
-			<nav aria-label="Primary">
+			<nav aria-label="Primary" class="navbar">
 				<div>
 					<img
 						src="./images/rose.png"
 						alt="Grim Reaper &amp; Co Logo"
 						width="50"
 					/>
+					<h1>Grim Reaper &amp; Co</h1>
 				</div>
 				<ul>
 					<li><a href="index.html" aria-current="page">Home</a></li>
@@ -34,183 +36,409 @@
 			</nav>
 		</header>
 
-		<main id="main-content">
+		<main id="main-content" class="container">
 			<!-- Hero Section -->
-			<section aria-labelledby="hero-title">
-				<h2 id="hero-title">We are sorry for your loss</h2>
-				<p>
-					To make this easier for you, we provide an easy and
-					intuitive solution to all your needs.
-				</p>
+			<section aria-labelledby="hero-title" id="hero-section">
 				<img
 					src="./images/grimreaper.png"
 					alt="grimreaper"
 					width="250"
 				/>
+				<div id="hero-text">
+					<div>
+						<h2 id="hero-title" class="heading">
+							We are sorry for your loss
+						</h2>
+						<p>To make this easier for you,</p>
+						<p>
+							We provide an easy and intuitive solution for all
+							your needs.
+						</p>
+					</div>
+					<div id="hero-buttons">
+						<a href="#services-section"
+							><button type="button">Services</button>
+						</a>
+
+						<a href="#products-section">
+							<button type="button">Products</button>
+						</a>
+					</div>
+				</div>
 			</section>
 
 			<!-- About Us Section -->
-			<section id="aboutUs-section" aria-labelledby="about-title">
-				<h2 id="about-title">About Us</h2>
-				<figure>
-					<img
-						src="./images/rose.png"
-						alt="Grim Reaper &amp; Co Logo"
-						width="100"
-					/>
-				</figure>
-				<p>
-					At Grim Reaper &amp; Co, we understand that planning a
-					funeral is one of life’s most difficult moments. Based in
-					Cape Town, we provide compassionate and professional
-					services designed to ease the burden on grieving families.
-					From handling the body with dignity to arranging catering,
-					vehicles, and complete funeral planning, our team is here to
-					take care of every detail. With just a few clicks, we offer
-					quick and transparent quotes, giving you more time to focus
-					on honoring the memory of your loved one. Our mission is
-					simple, to make the process as seamless and supportive as
-					possible, ensuring every farewell is treated with the
-					respect it deserves.
-				</p>
+			<section
+				id="aboutUs-section"
+				aria-labelledby="about-title"
+				class="container"
+			>
+				<div id="aboutUs-header">
+					<figure>
+						<img
+							src="./images/rose.png"
+							alt="Grim Reaper &amp; Co Logo"
+						/>
+					</figure>
+					<h2 id="about-title" class="heading">About Us</h2>
+				</div>
+				<div id="aboutUs-content">
+					<p>
+						At Grim Reaper &amp; Co, we understand that planning a
+						funeral is one of life’s most difficult moments. Based
+						in Cape Town, we provide compassionate and professional
+						services designed to ease the burden on grieving
+						families. From handling the body with dignity to
+						arranging catering, vehicles, and complete funeral
+						planning, our team is here to take care of every detail.
+						With just a few clicks, we offer quick and transparent
+						quotes, giving you more time to focus on honoring the
+						memory of your loved one. Our mission is simple, to make
+						the process as seamless and supportive as possible,
+						ensuring every farewell is treated with the respect it
+						deserves.
+					</p>
+				</div>
 			</section>
 
 			<!-- Services Section -->
-			<section id="services-section" aria-labelledby="services-title">
+			<section
+				id="services-section"
+				aria-labelledby="services-title"
+				class="container"
+			>
 				<h2 id="services-title">Our Services</h2>
-				<ul>
-					<li>
-						<strong>Body Handling &amp; Preparation</strong> -
-						Dignified collection, care, and preparation of your
-						loved one, ensuring they are treated with the utmost
-						respect every step of the way.
-					</li>
-					<li>
-						<strong>Funeral Planning</strong> - From paperwork to
-						service coordination, our experienced team guides you
-						through every detail, easing the burden during this
-						difficult time.
-					</li>
-					<li>
-						<strong>Vehicles &amp; Transport</strong> - A fleet of
-						professional vehicles, including traditional hearses and
-						family transport, to ensure a respectful final journey.
-					</li>
-					<li>
-						<strong>Catering Services</strong> - Thoughtfully
-						prepared catering options for memorial gatherings,
-						tailored to suit your needs and the size of your event.
-					</li>
-					<li>
-						<strong>Floral Arrangements</strong> - Elegant and
-						tasteful flowers for the ceremony, graveside, or
-						memorial service, arranged to honour your loved one’s
-						memory.
-					</li>
-					<li>
-						<strong>Memorial Products</strong> - A selection of
-						urns, headstones, and keepsakes to help families cherish
-						and preserve the memory of their loved ones.
-					</li>
-					<li>
-						<strong>Event Management</strong> - Full coordination of
-						funeral services, ensuring every aspect — from seating
-						to music — runs smoothly and respectfully.
-					</li>
-					<li>
-						<strong>Grief Support Resources</strong> - Guidance and
-						support materials to help families navigate the grieving
-						process with compassion and care.
-					</li>
-				</ul>
+				<div class="cardsGrid">
+					<div class="card">
+						<div class="cardHeading">
+							<figure>
+								<img
+									src="./images/icons/coffin.png"
+									alt="Grim Reaper &amp; Co Logo"
+									width="28"
+								/>
+							</figure>
+							<strong>Body Handling &amp; Preparation</strong>
+						</div>
+						<div class="cardBody">
+							Dignified collection, care, and preparation of your
+							loved one, ensuring they are treated with the utmost
+							respect every step of the way.
+						</div>
+					</div>
+					<div class="card">
+						<div class="cardHeading">
+							<figure>
+								<img
+									src="./images/icons/plan.png"
+									alt="Grim Reaper &amp; Co Logo"
+									width="28"
+								/>
+							</figure>
+							<strong>Funeral Planning</strong>
+						</div>
+						<div class="cardBody">
+							From paperwork to service coordination, our
+							experienced team guides you through every detail,
+							easing the burden during this difficult time.
+						</div>
+					</div>
+					<div class="card">
+						<div class="cardHeading">
+							<figure>
+								<img
+									src="./images/icons/car.png"
+									alt="Grim Reaper &amp; Co Logo"
+									width="28"
+								/>
+							</figure>
+							<strong>Vehicles &amp; Transport</strong>
+						</div>
+						<div class="cardBody">
+							A fleet of professional vehicles, including
+							traditional hearses and family transport, to ensure
+							a respectful final journey.
+						</div>
+					</div>
+					<div class="card">
+						<div class="cardHeading">
+							<figure>
+								<img
+									src="./images/icons/catering.png"
+									alt="Grim Reaper &amp; Co Logo"
+									width="28"
+								/>
+							</figure>
+							<strong>Catering Services</strong>
+						</div>
+						<div class="cardBody">
+							Thoughtfully prepared catering options for memorial
+							gatherings, tailored to suit your needs and the size
+							of your event.
+						</div>
+					</div>
+					<div class="card">
+						<div class="cardHeading">
+							<figure>
+								<img
+									src="./images/icons/flowers.png"
+									alt="Grim Reaper &amp; Co Logo"
+									width="28"
+								/>
+							</figure>
+							<strong>Floral Arrangements</strong>
+						</div>
+						<div class="cardBody">
+							Elegant and tasteful flowers for the ceremony,
+							graveside, or memorial service, arranged to honour
+							your loved one’s memory.
+						</div>
+					</div>
+					<div class="card">
+						<div class="cardHeading">
+							<figure>
+								<img
+									src="./images/icons/urn.png"
+									alt="Grim Reaper &amp; Co Logo"
+									width="28"
+								/>
+							</figure>
+							<strong>Memorial Products</strong>
+						</div>
+						<div class="cardBody">
+							A selection of urns, headstones, and keepsakes to
+							help families cherish and preserve the memory of
+							their loved ones.
+						</div>
+					</div>
+					<div class="card">
+						<div class="cardHeading">
+							<figure>
+								<img
+									src="./images/icons/event.png"
+									alt="Grim Reaper &amp; Co Logo"
+									width="28"
+								/>
+							</figure>
+							<strong>Event Management</strong>
+						</div>
+						<div class="cardBody">
+							Full coordination of funeral services, ensuring
+							every aspect - from seating to music - runs smoothly
+							and respectfully.
+						</div>
+					</div>
+					<div class="card">
+						<div class="cardHeading">
+							<figure>
+								<img
+									src="./images/icons/hug.png"
+									alt="Grim Reaper &amp; Co Logo"
+									width="28"
+								/>
+							</figure>
+							<strong>Grief Support Resources</strong>
+						</div>
+						<div class="cardBody">
+							Guidance and support materials to help families
+							navigate the grieving process with compassion and
+							care.
+						</div>
+					</div>
+				</div>
 			</section>
 
 			<!-- Products Section -->
-			<section id="products-section" aria-labelledby="products-title">
+			<section
+				id="products-section"
+				aria-labelledby="products-title"
+				class="container"
+			>
 				<h2 id="products-title">Our Products</h2>
-				<ul>
-					<li>
-						<strong>Caskets &amp; Coffins</strong> - A wide range of
-						caskets and coffins, from simple and dignified to
-						elegant and ornate, to suit every family’s needs and
-						preferences.
-					</li>
-					<li>
-						<strong>Urns</strong> - Beautifully crafted urns in
-						various styles and materials, offering families a
-						meaningful way to preserve their loved one’s ashes.
-					</li>
-					<li>
-						<strong>Headstones &amp; Grave Markers</strong> -
-						Customizable headstones and plaques designed to create a
-						lasting and personal tribute at the final resting place.
-					</li>
-					<li>
-						<strong>Funeral Programs</strong> - Thoughtfully
-						designed printed programs that guide guests through the
-						service and honour the life of your loved one.
-					</li>
-					<li>
-						<strong>Floral Tributes</strong> - Wreaths, bouquets,
-						and custom floral arrangements to bring beauty, comfort,
-						and dignity to any ceremony or memorial.
-					</li>
-					<li>
-						<strong>Memorial Keepsakes</strong> - Personalized
-						keepsakes such as engraved jewelry, photo frames, or
-						memory books to help families cherish their loved one’s
-						memory.
-					</li>
-					<li>
-						<strong>Candles &amp; Décor</strong> - Elegant candles,
-						stands, and ceremonial décor to create a warm, peaceful,
-						and respectful atmosphere.
-					</li>
-					<li>
-						<strong>Digital Memorials</strong> - Online memorial
-						pages that allow family and friends to share stories,
-						photos, and messages of remembrance.
-					</li>
-				</ul>
+				<div class="cardsGrid">
+					<div class="card">
+						<div class="cardHeading">
+							<figure>
+								<img
+									src="./images/icons/coffin.png"
+									alt="Grim Reaper &amp; Co Logo"
+									width="28"
+								/>
+							</figure>
+							<strong>Caskets &amp; Coffins</strong>
+						</div>
+						<div class="cardBody">
+							A wide range of caskets and coffins, from simple and
+							dignified to elegant and ornate, to suit every
+							family’s needs and preferences.
+						</div>
+					</div>
+					<div class="card">
+						<div class="cardHeading">
+							<figure>
+								<img
+									src="./images/icons/urn.png"
+									alt="Grim Reaper &amp; Co Logo"
+									width="28"
+								/>
+							</figure>
+							<strong>Urns</strong>
+						</div>
+						<div class="cardBody">
+							Beautifully crafted urns in various styles and
+							materials, offering families a meaningful way to
+							preserve their loved one’s ashes.
+						</div>
+					</div>
+					<div class="card">
+						<div class="cardHeading">
+							<figure>
+								<img
+									src="./images/icons/headstone.png"
+									alt="Grim Reaper &amp; Co Logo"
+									width="28"
+								/>
+							</figure>
+							<strong>Headstones &amp; Grave Markers</strong>
+						</div>
+						<div class="cardBody">
+							Customizable headstones and plaques designed to
+							create a lasting and personal tribute at the final
+							resting place.
+						</div>
+					</div>
+					<div class="card">
+						<div class="cardHeading">
+							<figure>
+								<img
+									src="./images/icons/program.png"
+									alt="Grim Reaper &amp; Co Logo"
+									width="28"
+								/>
+							</figure>
+							<strong>Funeral Programs</strong>
+						</div>
+						<div class="cardBody">
+							Thoughtfully designed printed programs that guide
+							guests through the service and honour the life of
+							your loved one.
+						</div>
+					</div>
+					<div class="card">
+						<div class="cardHeading">
+							<figure>
+								<img
+									src="./images/icons/flowers.png"
+									alt="Grim Reaper &amp; Co Logo"
+									width="28"
+								/>
+							</figure>
+							<strong>Floral Tributes</strong>
+						</div>
+						<div class="cardBody">
+							Wreaths, bouquets, and custom floral arrangements to
+							bring beauty, comfort, and dignity to any ceremony
+							or memorial.
+						</div>
+					</div>
+					<div class="card">
+						<div class="cardHeading">
+							<figure>
+								<img
+									src="./images/icons/memorial.png"
+									alt="Grim Reaper &amp; Co Logo"
+									width="28"
+								/>
+							</figure>
+							<strong>Memorial Keepsakes</strong>
+						</div>
+						<div class="cardBody">
+							Personalized keepsakes such as engraved jewelry,
+							photo frames, or memory books to help families
+							cherish their loved one’s memory.
+						</div>
+					</div>
+					<div class="card">
+						<div class="cardHeading">
+							<figure>
+								<img
+									src="./images/icons/candle.png"
+									alt="Grim Reaper &amp; Co Logo"
+									width="28"
+								/>
+							</figure>
+							<strong>Candles &amp; Décor</strong>
+						</div>
+						<div class="cardBody">
+							Elegant candles, stands, and ceremonial décor to
+							create a warm, peaceful, and respectful atmosphere.
+						</div>
+					</div>
+					<div class="card">
+						<div class="cardHeading">
+							<figure>
+								<img
+									src="./images/icons/coffin.png"
+									alt="Grim Reaper &amp; Co Logo"
+									width="28"
+								/>
+							</figure>
+							<strong>Digital Memorials</strong>
+						</div>
+						<div class="cardBody">
+							Online memorial pages that allow family and friends
+							to share stories, photos, and messages of
+							remembrance.
+						</div>
+					</div>
+				</div>
 			</section>
 		</main>
 
 		<!-- Footer -->
 		<footer>
-			<section aria-labelledby="footer-about">
-				<h3 id="footer-about">About Us</h3>
-				<p>
-					Grim Reaper &amp; Co provides compassionate funeral services
-					in Cape Town and beyond. From dignified body handling to
-					full funeral planning, we are here to ease the burden and
-					honour every life with respect.
-				</p>
-			</section>
+			<div class="footer-content">
+				<section aria-labelledby="footer-about">
+					<h3 id="footer-about">About Us</h3>
+					<p>
+						Grim Reaper &amp; Co provides compassionate funeral
+						services in Cape Town and beyond. From dignified body
+						handling to full funeral planning, we are here to ease
+						the burden and honour every life with respect.
+					</p>
+				</section>
 
-			<section aria-labelledby="footer-links">
-				<h3 id="footer-links">Quick Links</h3>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="products.html">Products</a></li>
-					<li><a href="quote.html">Get a Quote</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="faqs.html">FAQs</a></li>
-				</ul>
-			</section>
+				<section aria-labelledby="footer-links">
+					<h3 id="footer-links">Quick Links</h3>
+					<div>
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="./index.html#aboutUs-section">About Us</a>
+						</li>
+						<li>
+							<a href="./index.html#services-section">Services</a>
+						</li>
+						<li>
+							<a href="./index.html#products-section">Products</a>
+						</li>
+						<li><a href="quote.html">Get a Quote</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="faqs.html">FAQs</a></li>
+					</div>
+				</section>
 
-			<section aria-labelledby="footer-contact">
-				<h3 id="footer-contact">Contact Us</h3>
-				<address>
-					Cape Town, Western Cape, South Africa<br />
-					Phone: +27 (0)21 123 4567<br />
-					Email:
-					<a href="mailto:info@grimreaperandco.co.za"
-						>info@grimreaperandco.co.za</a
-					>
-				</address>
-			</section>
+				<section aria-labelledby="footer-contact">
+					<h3 id="footer-contact">Contact Us</h3>
+					<address>
+						Cape Town, Western Cape, South Africa<br />
+						Phone: +27 (0)21 123 4567<br />
+						Email:
+						<a href="mailto:info@grimreaperandco.co.za"
+							>info@grimreaperandco.co.za</a
+						>
+					</address>
+				</section>
+			</div>
 
 			<div>
 				<p>
