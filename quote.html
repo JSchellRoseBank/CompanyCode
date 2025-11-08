@@ -8,17 +8,19 @@
 			name="description"
 			content="Request a funeral services quote from Grim Reaper & Co. Choose from packages, products, and additional options tailored to your needs."
 		/>
+		<link rel="stylesheet" href="./styles/base.css" />
+		<link rel="stylesheet" href="./styles/quote.css" />
 	</head>
 	<body>
 		<header>
-			<h1>Grim Reaper &amp; Co</h1>
-			<nav aria-label="Primary">
+			<nav aria-label="Primary" class="navbar">
 				<div>
 					<img
 						src="./images/rose.png"
 						alt="Grim Reaper &amp; Co Logo"
 						width="50"
 					/>
+					<h1>Grim Reaper &amp; Co</h1>
 				</div>
 				<ul>
 					<li><a href="index.html">Home</a></li>
@@ -40,9 +42,9 @@
 			</nav>
 		</header>
 
-		<main id="main-content">
-			<h2>Get a Quote</h2>
-			<form action="#" method="post">
+		<main id="main-content" class="container">
+			<h2 class="heading">Get a Quote</h2>
+			<form action="#" method="post" class="quote-form">
 				<!-- Section 1 – Service Type -->
 				<section aria-labelledby="service-type">
 					<h3 id="service-type">Service Type</h3>
@@ -275,46 +277,56 @@
 				<br />
 
 				<!-- Submit Button -->
-				<button type="submit">Calculate Quote</button>
+				<button type="submit" class="form-button">
+					Calculate Quote
+				</button>
 			</form>
 		</main>
 
 		<!-- Footer -->
 		<footer>
-			<section aria-labelledby="footer-about">
-				<h3 id="footer-about">About Us</h3>
-				<p>
-					Grim Reaper &amp; Co provides compassionate funeral services
-					in Cape Town and beyond. From dignified body handling to
-					full funeral planning, we are here to ease the burden and
-					honour every life with respect.
-				</p>
-			</section>
+			<div class="footer-content">
+				<section aria-labelledby="footer-about">
+					<h3 id="footer-about">About Us</h3>
+					<p>
+						Grim Reaper &amp; Co provides compassionate funeral
+						services in Cape Town and beyond. From dignified body
+						handling to full funeral planning, we are here to ease
+						the burden and honour every life with respect.
+					</p>
+				</section>
 
-			<section aria-labelledby="footer-links">
-				<h3 id="footer-links">Quick Links</h3>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="products.html">Products</a></li>
-					<li><a href="quote.html">Get a Quote</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="faqs.html">FAQs</a></li>
-				</ul>
-			</section>
+				<section aria-labelledby="footer-links">
+					<h3 id="footer-links">Quick Links</h3>
+					<div>
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="./index.html#aboutUs-section">About Us</a>
+						</li>
+						<li>
+							<a href="./index.html#services-section">Services</a>
+						</li>
+						<li>
+							<a href="./index.html#products-section">Products</a>
+						</li>
+						<li><a href="quote.html">Get a Quote</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="faqs.html">FAQs</a></li>
+					</div>
+				</section>
 
-			<section aria-labelledby="footer-contact">
-				<h3 id="footer-contact">Contact Us</h3>
-				<address>
-					Cape Town, Western Cape, South Africa<br />
-					Phone: +27 (0)21 123 4567<br />
-					Email:
-					<a href="mailto:info@grimreaperandco.co.za"
-						>info@grimreaperandco.co.za</a
-					>
-				</address>
-			</section>
+				<section aria-labelledby="footer-contact">
+					<h3 id="footer-contact">Contact Us</h3>
+					<address>
+						Cape Town, Western Cape, South Africa<br />
+						Phone: +27 (0)21 123 4567<br />
+						Email:
+						<a href="mailto:info@grimreaperandco.co.za"
+							>info@grimreaperandco.co.za</a
+						>
+					</address>
+				</section>
+			</div>
 
 			<div>
 				<p>
