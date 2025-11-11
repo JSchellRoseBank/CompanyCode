@@ -121,6 +121,15 @@ Future updates will include **Part 2** and **Part 3** with additional functional
 
 ## Change Log
 
+**v0.5**
+
+-   Updated responsive media queries and 1 more
+
+**v0.4**
+
+-   Added media queries for mobile and table
+-   Resized and checked responsiveness
+
 **v0.3 - Fixed Visual Bugs and Added more styles**
 
 -   Fixed Spacing on index page for services and products
