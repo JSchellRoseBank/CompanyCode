@@ -1,5 +1,111 @@
 /* Index/Home Page Specific Styles */
 
+/* Accordion Styles */
+.accordion-container {
+	margin-bottom: 15px;
+}
+
+.accordion-header {
+	background: linear-gradient(135deg, #fa812f 0%, #fab12f 100%);
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 18px;
+	font-weight: bold;
+	transition: all 0.3s ease;
+	border-radius: 8px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header:hover {
+	background: linear-gradient(135deg, #fab12f 0%, #fa812f 100%);
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.accordion-header.active {
+	background: linear-gradient(135deg, #dd0303 0%, #fa812f 100%);
+	border-radius: 8px 8px 0 0;
+}
+
+.accordion-icon {
+	font-size: 20px;
+	transition: transform 0.3s ease;
+	display: inline-block;
+}
+
+.accordion-icon.rotated {
+	transform: rotate(180deg);
+}
+
+.accordion-content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
+	background-color: #fef3e2;
+	border-radius: 0 0 8px 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-content-inner {
+	padding: 20px;
+	line-height: 1.6;
+	color: #333;
+}
+
+.accordion-content-inner ul {
+	margin-top: 10px;
+	margin-left: 20px;
+	list-style-type: none;
+}
+
+.accordion-content-inner ul li {
+	padding: 5px 0;
+	position: relative;
+}
+
+.accordion-content-inner ul li::before {
+	content: "✓";
+	color: #fa812f;
+	font-weight: bold;
+	margin-right: 10px;
+	position: absolute;
+	left: -20px;
+}
+
+.accordion-content-inner strong {
+	color: #fa812f;
+}
+
+/* Control buttons for accordions */
+.accordion-controls {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.accordion-controls button {
+	background-color: #fa812f;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	margin: 0 5px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	transition: background-color 0.3s ease;
+}
+
+.accordion-controls button:hover {
+	background-color: #fab12f;
+}
+
 /* Hero Section */
 .container #hero-section {
 	display: flex;
