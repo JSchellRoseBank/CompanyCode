@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="./styles/base.css" />
 		<link rel="stylesheet" href="./styles/index.css" />
 		<script src="./scripts/accordion.js" defer></script>
+		<script src="./scripts/modal.js" defer></script>
 	</head>
 	<body>
 		<header>
@@ -136,6 +137,13 @@
 									<li>Dressing and presentation</li>
 									<li>Viewing arrangements</li>
 								</ul>
+								<button
+									class="learn-more-btn"
+									data-modal="body-handling"
+									type="button"
+								>
+									Learn More & Pricing
+								</button>
 							</div>
 						</div>
 					</div>
@@ -165,6 +173,13 @@
 									<li>Officiant arrangements</li>
 									<li>Music and multimedia setup</li>
 								</ul>
+								<button
+									class="learn-more-btn"
+									data-modal="funeral-planning"
+									type="button"
+								>
+									Learn More & Pricing
+								</button>
 							</div>
 						</div>
 					</div>
@@ -189,6 +204,13 @@
 									<li>Motorcycle hearse (unique option)</li>
 									<li>Professional chauffeurs included</li>
 								</ul>
+								<button
+									class="learn-more-btn"
+									data-modal="vehicles-transport"
+									type="button"
+								>
+									Learn More & Pricing
+								</button>
 							</div>
 						</div>
 					</div>
@@ -217,6 +239,13 @@
 									<li>Snack platters and full meals</li>
 									<li>Venue setup and cleanup included</li>
 								</ul>
+								<button
+									class="learn-more-btn"
+									data-modal="catering-services"
+									type="button"
+								>
+									Learn More & Pricing
+								</button>
 							</div>
 						</div>
 					</div>
@@ -245,6 +274,13 @@
 										Fresh, seasonal flowers sourced locally
 									</li>
 								</ul>
+								<button
+									class="learn-more-btn"
+									data-modal="floral-arrangements"
+									type="button"
+								>
+									Learn More & Pricing
+								</button>
 							</div>
 						</div>
 					</div>
@@ -269,6 +305,13 @@
 									<li>Headstones and plaques</li>
 									<li>Custom engraving services</li>
 								</ul>
+								<button
+									class="learn-more-btn"
+									data-modal="memorial-products"
+									type="button"
+								>
+									Learn More & Pricing
+								</button>
 							</div>
 						</div>
 					</div>
@@ -295,6 +338,13 @@
 									</li>
 									<li>Timeline coordination on the day</li>
 								</ul>
+								<button
+									class="learn-more-btn"
+									data-modal="event-management"
+									type="button"
+								>
+									Learn More & Pricing
+								</button>
 							</div>
 						</div>
 					</div>
@@ -320,6 +370,13 @@
 									<li>Follow-up care and check-ins</li>
 									<li>Memorial anniversary reminders</li>
 								</ul>
+								<button
+									class="learn-more-btn"
+									data-modal="grief-support"
+									type="button"
+								>
+									Learn More & Pricing
+								</button>
 							</div>
 						</div>
 					</div>
@@ -500,6 +557,13 @@
 									<li>Custom colors and finishes</li>
 									<li>Interior lining choices</li>
 								</ul>
+								<button
+									class="learn-more-btn"
+									data-modal="caskets-coffins"
+									type="button"
+								>
+									Learn More & Pricing
+								</button>
 							</div>
 						</div>
 					</div>
@@ -526,6 +590,13 @@
 									<li>Keepsake urns for sharing ashes</li>
 									<li>Custom engraving available</li>
 								</ul>
+								<button
+									class="learn-more-btn"
+									data-modal="urns"
+									type="button"
+								>
+									Learn More & Pricing
+								</button>
 							</div>
 						</div>
 					</div>
@@ -553,6 +624,13 @@
 									<li>Custom shapes and designs</li>
 									<li>Photo engraving and laser etching</li>
 								</ul>
+								<button
+									class="learn-more-btn"
+									data-modal="headstones"
+									type="button"
+								>
+									Learn More & Pricing
+								</button>
 							</div>
 						</div>
 					</div>
@@ -580,6 +658,13 @@
 									<li>Order of service details</li>
 									<li>Life story and photo tributes</li>
 								</ul>
+								<button
+									class="learn-more-btn"
+									data-modal="funeral-programs"
+									type="button"
+								>
+									Learn More & Pricing
+								</button>
 							</div>
 						</div>
 					</div>
@@ -605,6 +690,13 @@
 									<li>Seasonal and year-round flowers</li>
 									<li>Delivery to venue or graveside</li>
 								</ul>
+								<button
+									class="learn-more-btn"
+									data-modal="floral-tributes"
+									type="button"
+								>
+									Learn More & Pricing
+								</button>
 							</div>
 						</div>
 					</div>
@@ -633,6 +725,13 @@
 									<li>Memorial cards and bookmarks</li>
 									<li>Custom engraving on all items</li>
 								</ul>
+								<button
+									class="learn-more-btn"
+									data-modal="memorial-keepsakes"
+									type="button"
+								>
+									Learn More & Pricing
+								</button>
 							</div>
 						</div>
 					</div>
@@ -658,6 +757,13 @@
 									<li>Memorial guest books</li>
 									<li>Ceremony signage and displays</li>
 								</ul>
+								<button
+									class="learn-more-btn"
+									data-modal="candles-decor"
+									type="button"
+								>
+									Learn More & Pricing
+								</button>
 							</div>
 						</div>
 					</div>
@@ -686,6 +792,13 @@
 										memorial
 									</li>
 								</ul>
+								<button
+									class="learn-more-btn"
+									data-modal="digital-memorials"
+									type="button"
+								>
+									Learn More & Pricing
+								</button>
 							</div>
 						</div>
 					</div>
@@ -884,5 +997,19 @@
 				</p>
 			</div>
 		</footer>
+
+		<!-- Modal for Service/Product Details -->
+		<div id="detailModal" class="modal">
+			<div class="modal-overlay"></div>
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 id="modalTitle">Service Details</h2>
+					<button class="modal-close" type="button">&times;</button>
+				</div>
+				<div class="modal-body" id="modalBody">
+					<!-- Content will be dynamically loaded here -->
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
