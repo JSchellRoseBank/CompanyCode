@@ -10,8 +10,22 @@
 		/>
 		<link rel="stylesheet" href="./styles/base.css" />
 		<link rel="stylesheet" href="./styles/index.css" />
+		<!-- Leaflet CSS -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+			integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+			crossorigin=""
+		/>
+		<!-- Leaflet JS -->
+		<script
+			src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+			integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+			crossorigin=""
+		></script>
 		<script src="./scripts/accordion.js" defer></script>
 		<script src="./scripts/modal.js" defer></script>
+		<script src="./scripts/map.js" defer></script>
 	</head>
 	<body>
 		<header>
@@ -940,6 +954,47 @@
 							to share stories, photos, and messages of
 							remembrance.
 						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Location Map Section -->
+			<section
+				id="location-section"
+				aria-labelledby="location-title"
+				class="container"
+			>
+				<h2 id="location-title">Find Us in Cape Town</h2>
+				<p class="location-description">
+					Visit our offices or contact us for home consultations.
+					We're here to serve families throughout Cape Town and
+					surrounding areas.
+				</p>
+				<div class="map-container">
+					<div id="map"></div>
+				</div>
+				<div class="location-details">
+					<div class="location-card">
+						<h3>📍 Address</h3>
+						<p>
+							123 Main Road<br />Cape Town CBD<br />Cape Town,
+							8001
+						</p>
+					</div>
+					<div class="location-card">
+						<h3>📞 Contact</h3>
+						<p>
+							Phone: +27 (0)21 123 4567<br />Email:
+							info@grimreaperandco.co.za<br />24/7 Emergency Line
+						</p>
+					</div>
+					<div class="location-card">
+						<h3>🕐 Office Hours</h3>
+						<p>
+							Monday - Friday: 8:00 AM - 5:00 PM<br />Saturday:
+							9:00 AM - 1:00 PM<br />Sunday: Closed (Emergency
+							calls only)
+						</p>
 					</div>
 				</div>
 			</section>
