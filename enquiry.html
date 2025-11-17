@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>
+			Service Enquiry - Grim Reaper & Co | Request Information About
+			Our Services
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="description"
+			content="Enquire about funeral services, products, volunteering or sponsorship opportunities at Grim Reaper & Co Cape Town. Get pricing, availability and detailed information."
+		/>
+		<meta
+			name="keywords"
+			content="funeral enquiry, service inquiry, funeral prices, volunteer opportunities, funeral sponsorship, Cape Town funeral services"
+		/>
+		<meta name="author" content="Grim Reaper & Co" />
+		<meta name="robots" content="index, follow" />
+		<link
+			rel="canonical"
+			href="https://www.grimreaperandco.co.za/enquiry.html"
+		/>
+		<link rel="icon" type="image/png" href="./images/rose.png" />
+
+		<!-- Open Graph Meta Tags -->
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:title"
+			content="Service Enquiry - Grim Reaper & Co"
+		/>
+		<meta
+			property="og:description"
+			content="Make an enquiry about our funeral services, products, or partnership opportunities."
+		/>
+		<meta
+			property="og:url"
+			content="https://www.grimreaperandco.co.za/enquiry.html"
+		/>
+
+		<link rel="stylesheet" href="./styles/base.css" />
+		<link rel="stylesheet" href="./styles/contact.css" />
+		<script src="./scripts/formValidation.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<nav aria-label="Primary" class="navbar">
+				<div>
+					<img
+						src="./images/rose.png"
+						alt="Grim Reaper &amp; Co Logo"
+						width="50"
+					/>
+					<h1>Grim Reaper &amp; Co</h1>
+				</div>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li>
+						<a href="./index.html#aboutUs-section">About Us</a>
+					</li>
+					<li>
+						<a href="./index.html#services-section">Services</a>
+					</li>
+					<li>
+						<a href="./index.html#products-section">Products</a>
+					</li>
+					<li><a href="quote.html">Get a Quote</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="faqs.html">FAQs</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="main-content" class="container">
+			<section aria-labelledby="enquiry-title">
+				<h2 id="enquiry-title" class="heading">Service Enquiry</h2>
+				<p class="intro-text">
+					Please fill out the form below to enquire about our
+					services, products, volunteering opportunities, or
+					sponsorship. We'll review your enquiry and respond with
+					relevant information including pricing, availability, and
+					next steps.
+				</p>
+
+				<form
+					id="enquiryForm"
+					class="contact-form"
+					novalidate
+					onsubmit="return handleEnquirySubmit(event)"
+				>
+					<!-- Personal Information -->
+					<fieldset>
+						<legend>Personal Information</legend>
+
+						<div class="form-group">
+							<label for="fullName"
+								>Full Name <span class="required">*</span></label
+							>
+							<input
+								type="text"
+								id="fullName"
+								name="fullName"
+								required
+								minlength="2"
+								maxlength="100"
+								placeholder="John Doe"
+								aria-required="true"
+							/>
+							<span class="error-message" id="fullName-error"></span>
+						</div>
+
+						<div class="form-group">
+							<label for="email"
+								>Email Address
+								<span class="required">*</span></label
+							>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								required
+								placeholder="john.doe@example.com"
+								aria-required="true"
+							/>
+							<span class="error-message" id="email-error"></span>
+						</div>
+
+						<div class="form-group">
+							<label for="phone"
+								>Phone Number <span class="required">*</span></label
+							>
+							<input
+								type="tel"
+								id="phone"
+								name="phone"
+								required
+								pattern="[0-9+\s\-()]{10,15}"
+								placeholder="+27 21 123 4567"
+								aria-required="true"
+							/>
+							<span class="error-message" id="phone-error"></span>
+							<small class="help-text"
+								>Format: +27 21 123 4567 or 0211234567</small
+							>
+						</div>
+					</fieldset>
+
+					<!-- Enquiry Type -->
+					<fieldset>
+						<legend>Enquiry Type</legend>
+
+						<div class="form-group">
+							<label for="enquiryType"
+								>What are you enquiring about?
+								<span class="required">*</span></label
+							>
+							<select
+								id="enquiryType"
+								name="enquiryType"
+								required
+								aria-required="true"
+								onchange="handleEnquiryTypeChange()"
+							>
+								<option value="">
+									-- Please Select --
+								</option>
+								<option value="funeral-service">
+									Funeral Service
+								</option>
+								<option value="cremation">Cremation</option>
+								<option value="burial">Burial</option>
+								<option value="products">
+									Products (Caskets, Urns, etc.)
+								</option>
+								<option value="memorial-service">
+									Memorial Service
+								</option>
+								<option value="pre-planning">
+									Pre-Planning / Pre-Arrangement
+								</option>
+								<option value="volunteer">
+									Volunteer Opportunity
+								</option>
+								<option value="sponsorship">
+									Sponsorship / Partnership
+								</option>
+								<option value="other">Other</option>
+							</select>
+							<span class="error-message" id="enquiryType-error"></span>
+						</div>
+					</fieldset>
+
+					<!-- Service Details (conditional) -->
+					<fieldset id="serviceDetails" style="display: none">
+						<legend>Service Details</legend>
+
+						<div class="form-group">
+							<label for="serviceDate">Preferred Date</label>
+							<input
+								type="date"
+								id="serviceDate"
+								name="serviceDate"
+								min=""
+							/>
+							<span class="error-message" id="serviceDate-error"></span>
+						</div>
+
+						<div class="form-group">
+							<label for="guestCount"
+								>Approximate Number of Guests</label
+							>
+							<input
+								type="number"
+								id="guestCount"
+								name="guestCount"
+								min="1"
+								max="1000"
+								placeholder="50"
+							/>
+							<span class="error-message" id="guestCount-error"></span>
+						</div>
+
+						<div class="form-group">
+							<label for="budget">Budget Range (ZAR)</label>
+							<select id="budget" name="budget">
+								<option value="">-- Select Range --</option>
+								<option value="under-5000">
+									Under R5,000
+								</option>
+								<option value="5000-10000">
+									R5,000 - R10,000
+								</option>
+								<option value="10000-20000">
+									R10,000 - R20,000
+								</option>
+								<option value="20000-35000">
+									R20,000 - R35,000
+								</option>
+								<option value="35000-50000">
+									R35,000 - R50,000
+								</option>
+								<option value="over-50000">Over R50,000</option>
+								<option value="flexible">Flexible</option>
+							</select>
+						</div>
+					</fieldset>
+
+					<!-- Additional Information -->
+					<fieldset>
+						<legend>Additional Information</legend>
+
+						<div class="form-group">
+							<label for="message"
+								>Your Message / Questions
+								<span class="required">*</span></label
+							>
+							<textarea
+								id="message"
+								name="message"
+								required
+								minlength="10"
+								maxlength="1000"
+								rows="6"
+								placeholder="Please provide details about your enquiry..."
+								aria-required="true"
+							></textarea>
+							<span class="error-message" id="message-error"></span>
+							<small class="help-text"
+								>Character count: <span id="charCount">0</span>/1000</small
+							>
+						</div>
+
+						<div class="form-group">
+							<label for="preferredContact"
+								>Preferred Method of Contact
+								<span class="required">*</span></label
+							>
+							<div class="radio-group">
+								<label>
+									<input
+										type="radio"
+										name="preferredContact"
+										value="email"
+										checked
+									/>
+									Email
+								</label>
+								<label>
+									<input
+										type="radio"
+										name="preferredContact"
+										value="phone"
+									/>
+									Phone
+								</label>
+								<label>
+									<input
+										type="radio"
+										name="preferredContact"
+										value="either"
+									/>
+									Either
+								</label>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="urgency">Urgency Level</label>
+							<select id="urgency" name="urgency">
+								<option value="low">
+									Low (General Enquiry)
+								</option>
+								<option value="medium">
+									Medium (Within a week)
+								</option>
+								<option value="high">
+									High (Within 48 hours)
+								</option>
+								<option value="urgent">
+									Urgent (Within 24 hours)
+								</option>
+							</select>
+						</div>
+					</fieldset>
+
+					<!-- Privacy & Consent -->
+					<fieldset>
+						<legend>Privacy & Consent</legend>
+
+						<div class="form-group checkbox-group">
+							<label>
+								<input
+									type="checkbox"
+									id="privacyConsent"
+									name="privacyConsent"
+									required
+									aria-required="true"
+								/>
+								<span
+									>I agree to the privacy policy and consent
+									to be contacted regarding my enquiry.
+									<span class="required">*</span></span
+								>
+							</label>
+							<span
+								class="error-message"
+								id="privacyConsent-error"
+							></span>
+						</div>
+
+						<div class="form-group checkbox-group">
+							<label>
+								<input
+									type="checkbox"
+									id="newsletter"
+									name="newsletter"
+								/>
+								<span
+									>Subscribe to newsletter for updates and
+									helpful resources</span
+								>
+							</label>
+						</div>
+					</fieldset>
+
+					<!-- Form Response Display -->
+					<div id="formResponse" class="form-response"></div>
+
+					<!-- Submit Button -->
+					<div class="form-actions">
+						<button type="submit" class="form-button">
+							Submit Enquiry
+						</button>
+						<button
+							type="reset"
+							class="form-button secondary"
+							onclick="resetForm()"
+						>
+							Reset Form
+						</button>
+					</div>
+				</form>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer>
+			<div class="footer-content">
+				<section aria-labelledby="footer-about">
+					<h3 id="footer-about">About Us</h3>
+					<p>
+						Grim Reaper &amp; Co provides compassionate funeral
+						services in Cape Town and beyond. From dignified body
+						handling to full funeral planning, we are here to ease
+						the burden and honour every life with respect.
+					</p>
+				</section>
+
+				<section aria-labelledby="footer-links">
+					<h3 id="footer-links">Quick Links</h3>
+					<div>
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="./index.html#aboutUs-section">About Us</a>
+						</li>
+						<li>
+							<a href="./index.html#services-section">Services</a>
+						</li>
+						<li>
+							<a href="./index.html#products-section">Products</a>
+						</li>
+						<li><a href="quote.html">Get a Quote</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="faqs.html">FAQs</a></li>
+					</div>
+				</section>
+
+				<section aria-labelledby="footer-contact">
+					<h3 id="footer-contact">Contact Us</h3>
+					<address>
+						Cape Town, Western Cape, South Africa<br />
+						Phone: +27 (0)21 123 4567<br />
+						Email:
+						<a href="mailto:info@grimreaperandco.co.za"
+							>info@grimreaperandco.co.za</a
+						>
+					</address>
+				</section>
+			</div>
+
+			<div>
+				<p>
+					&copy; 2025 Grim Reaper &amp; Co. All Rights Reserved. |
+					Designed with dignity.
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>
+
