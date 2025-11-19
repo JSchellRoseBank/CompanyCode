@@ -87,6 +87,7 @@
 		<script src="./scripts/modal.js" defer></script>
 		<script src="./scripts/map.js" defer></script>
 		<script src="./scripts/animations.js" defer></script>
+		<script src="./scripts/lazyload.js" defer></script>
 
 		<!-- Structured Data (JSON-LD) for SEO -->
 		<script type="application/ld+json">
@@ -208,8 +209,11 @@
 			<section aria-labelledby="hero-title" id="hero-section">
 				<img
 					src="./images/grimreaper.png"
-					alt="grimreaper"
+					alt="Grim Reaper mascot"
 					width="250"
+					height="250"
+					class="preload-image"
+					fetchpriority="high"
 				/>
 				<div id="hero-text">
 					<div>
@@ -245,6 +249,9 @@
 						<img
 							src="./images/rose.png"
 							alt="Grim Reaper &amp; Co Logo"
+							width="100"
+							height="100"
+							loading="lazy"
 						/>
 					</figure>
 					<h2 id="about-title" class="heading">About Us</h2>

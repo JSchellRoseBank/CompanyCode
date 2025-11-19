@@ -71,243 +71,617 @@
 
 		<main id="main-content" class="container">
 			<h2 class="heading">Get a Quote</h2>
-			<form action="#" method="post" class="quote-form">
-				<!-- Section 1 – Service Type -->
-				<section aria-labelledby="service-type">
-					<h3 id="service-type">Service Type</h3>
-					<fieldset>
-						<legend>Pick an Option:</legend>
-						<label
-							><input
-								type="checkbox"
-								name="service-package"
-								value="funeral-service"
-							/>
-							Funeral Service Package</label
-						><br />
-						<label
-							><input
-								type="checkbox"
-								name="service-package"
-								value="cremation"
-							/>
-							Cremation Package</label
-						><br />
-						<label
-							><input
-								type="checkbox"
-								name="service-package"
-								value="burial"
-							/>
-							Burial Package</label
-						><br />
-						<label
-							><input
-								type="checkbox"
-								name="service-package"
-								value="memorial"
-							/>
-							Memorial Only</label
-						>
-					</fieldset>
-					<br />
-					<fieldset>
-						<legend>Choose Specific Services:</legend>
-						<label
-							><input
-								type="checkbox"
-								name="service-option"
-								value="body-preparation"
-							/>
-							Body Collection &amp; Preparation</label
-						><br />
-						<label
-							><input
-								type="checkbox"
-								name="service-option"
-								value="planning"
-							/>
-							Funeral Planning Assistance</label
-						><br />
-						<label
-							><input
-								type="checkbox"
-								name="service-option"
-								value="transport"
-							/>
-							Transport (Hearse &amp; Family Cars)</label
-						><br />
-						<label
-							><input
-								type="checkbox"
-								name="service-option"
-								value="catering"
-							/>
-							Catering Services</label
-						><br />
-						<label
-							><input
-								type="checkbox"
-								name="service-option"
-								value="flowers"
-							/>
-							Floral Arrangements</label
-						>
-					</fieldset>
-				</section>
-				<br />
+			
+			<!-- Pricing Information Section -->
+			<section class="pricing-section" aria-labelledby="pricing-title">
+				<h3 id="pricing-title" class="pricing-heading">Our Pricing Guide</h3>
+				<p class="pricing-intro">
+					Below is a comprehensive guide to our services and products with transparent pricing. 
+					Select what you need in the quote form below for a personalized estimate.
+				</p>
 
-				<!-- Section 2 – Product Selection -->
-				<section aria-labelledby="product-selection">
-					<h3 id="product-selection">Product Selection</h3>
-					<fieldset>
-						<legend>Pick Options:</legend>
-						<label
-							><input
-								type="checkbox"
-								name="product"
-								value="caskets"
-							/>
-							Caskets &amp; Coffins</label
-						><br />
-						<label
-							><input
-								type="checkbox"
-								name="product"
-								value="urns"
-							/>
-							Urns</label
-						><br />
-						<label
-							><input
-								type="checkbox"
-								name="product"
-								value="headstones"
-							/>
-							Headstones &amp; Grave Markers</label
-						><br />
-						<label
-							><input
-								type="checkbox"
-								name="product"
-								value="programs"
-							/>
-							Funeral Programs</label
-						><br />
-						<label
-							><input
-								type="checkbox"
-								name="product"
-								value="keepsakes"
-							/>
-							Memorial Keepsakes</label
-						>
-					</fieldset>
-					<br />
-					<fieldset>
-						<legend>Choose Item Style:</legend>
-						<label
-							><input
-								type="checkbox"
-								name="style"
-								value="standard"
-							/>
-							Standard (Simple &amp; Dignified)</label
-						><br />
-						<label
-							><input
-								type="checkbox"
-								name="style"
-								value="premium"
-							/>
-							Premium (Elegant &amp; Customizable)</label
-						><br />
-						<label
-							><input
-								type="checkbox"
-								name="style"
-								value="luxury"
-							/>
-							Luxury (High-End Design)</label
-						><br />
-						<label
-							><input type="checkbox" name="style" value="eco" />
-							Eco-Friendly Option</label
-						>
-					</fieldset>
-				</section>
-				<br />
+				<!-- Services Pricing -->
+				<div class="pricing-category">
+					<h4 class="category-title">Services</h4>
+					
+					<div class="pricing-grid">
+						<div class="pricing-card">
+							<h5>Body Handling & Preparation</h5>
+							<ul>
+								<li>24/7 Body Collection</li>
+								<li>Refrigeration Facilities</li>
+								<li>Embalming Services</li>
+								<li>Cosmetic Preparation</li>
+								<li>Dressing & Presentation</li>
+								<li>Viewing Arrangements</li>
+							</ul>
+							<p class="price">From <strong>R3,500</strong></p>
+						</div>
 
-				<!-- Section 3 – Additional Options -->
-				<section aria-labelledby="additional-options">
-					<h3 id="additional-options">Additional Options</h3>
-					<fieldset>
-						<legend>Select Additional Services:</legend>
-						<label
-							><input
-								type="checkbox"
-								name="additional"
-								value="venue"
-							/>
-							Venue Hire (chapel or hall)</label
-						><br />
-						<label
-							><input
-								type="checkbox"
-								name="additional"
-								value="leader"
-							/>
-							Religious/Spiritual Leader Services</label
-						><br />
-						<label
-							><input
-								type="checkbox"
-								name="additional"
-								value="music"
-							/>
-							Music (choir, soloist, recorded)</label
-						><br />
-						<label
-							><input
-								type="checkbox"
-								name="additional"
-								value="decor"
-							/>
-							Décor (candles, draping, stands)</label
-						><br />
-						<label
-							><input
-								type="checkbox"
-								name="additional"
-								value="printed"
-							/>
-							Printed Materials (obituary, thank-you cards)</label
-						><br />
-						<label
-							><input
-								type="checkbox"
-								name="additional"
-								value="streaming"
-							/>
-							Live Streaming Service</label
-						><br />
-						<label
-							><input
-								type="checkbox"
-								name="additional"
-								value="grief-support"
-							/>
-							Grief Support Resources</label
-						>
-					</fieldset>
-				</section>
-				<br />
+						<div class="pricing-card">
+							<h5>Funeral Planning Services</h5>
+							<ul>
+								<li>Initial Consultation</li>
+								<li>Death Certificate Processing</li>
+								<li>Burial/Cremation Coordination</li>
+								<li>Venue Booking</li>
+								<li>Officiant Arrangements</li>
+								<li>Music & Multimedia Setup</li>
+							</ul>
+							<p class="price">From <strong>R5,000</strong></p>
+						</div>
 
-				<!-- Submit Button -->
-				<button type="submit" class="form-button">
-					Calculate Quote
-				</button>
-			</form>
+						<div class="pricing-card">
+							<h5>Vehicles & Transport</h5>
+							<ul>
+								<li>Traditional or Modern Hearses</li>
+								<li>Luxury Limousines (6-8 seats)</li>
+								<li>Minibuses (14-20 seats)</li>
+								<li>Professional Chauffeurs</li>
+								<li>Distance-based pricing</li>
+							</ul>
+							<p class="price">From <strong>R2,500</strong></p>
+						</div>
+
+						<div class="pricing-card">
+							<h5>Catering Services</h5>
+							<ul>
+								<li>Traditional SA Menu</li>
+								<li>Buffet Service</li>
+								<li>Tea & Coffee Service</li>
+								<li>Snack Platters</li>
+								<li>Dietary Options Available</li>
+								<li>Delivery, Setup & Cleanup</li>
+							</ul>
+							<p class="price"><strong>R80</strong> per person (basic)<br><strong>R150</strong> per person (full buffet)</p>
+						</div>
+
+						<div class="pricing-card">
+							<h5>Floral Arrangements</h5>
+							<ul>
+								<li>Casket Sprays</li>
+								<li>Standing Wreaths</li>
+								<li>Cross Tributes</li>
+								<li>Bouquets & Sheaves</li>
+								<li>Single Stem Tributes</li>
+								<li>Custom Designs</li>
+							</ul>
+							<p class="price">Bouquets from <strong>R500</strong><br>Casket sprays from <strong>R1,500</strong><br>Standing tributes from <strong>R2,000</strong></p>
+						</div>
+
+						<div class="pricing-card">
+							<h5>Event Management</h5>
+							<ul>
+								<li>Guest Coordination</li>
+								<li>Seating Arrangements</li>
+								<li>Program Design</li>
+								<li>AV Equipment Setup</li>
+								<li>Photography & Videography</li>
+								<li>Timeline Management</li>
+								<li>Professional Ushers</li>
+							</ul>
+							<p class="price">Basic: <strong>R3,000</strong><br>Comprehensive: <strong>R8,000</strong></p>
+						</div>
+
+						<div class="pricing-card">
+							<h5>Grief Support Resources</h5>
+							<ul>
+								<li>Counseling Referrals</li>
+								<li>Support Groups Info</li>
+								<li>Educational Materials</li>
+								<li>Children's Resources</li>
+								<li>Follow-up Care</li>
+								<li>Memorial Reminders</li>
+							</ul>
+							<p class="price"><strong>Free of Charge</strong><br>for all families we serve</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Products Pricing -->
+				<div class="pricing-category">
+					<h4 class="category-title">Products</h4>
+					
+					<div class="pricing-grid">
+						<div class="pricing-card">
+							<h5>Caskets & Coffins</h5>
+							<ul>
+								<li>Solid Wood Caskets (Oak, Mahogany, Pine)</li>
+								<li>Veneer Caskets</li>
+								<li>Eco-Friendly Coffins</li>
+								<li>Metal Caskets</li>
+								<li>Custom Interior Options</li>
+							</ul>
+							<p class="price">Coffins from <strong>R3,000</strong><br>Veneer from <strong>R8,000</strong><br>Solid wood from <strong>R15,000</strong><br>Metal from <strong>R20,000</strong></p>
+						</div>
+
+						<div class="pricing-card">
+							<h5>Cremation Urns</h5>
+							<ul>
+								<li>Ceramic & Porcelain</li>
+								<li>Metal Urns (Brass, Bronze, Copper)</li>
+								<li>Wooden Urns</li>
+								<li>Biodegradable Urns</li>
+								<li>Keepsake Urns</li>
+								<li>Custom Designs</li>
+							</ul>
+							<p class="price">Standard from <strong>R800</strong><br>Premium from <strong>R2,500</strong><br>Custom from <strong>R4,000</strong><br>Keepsake from <strong>R300</strong></p>
+						</div>
+
+						<div class="pricing-card">
+							<h5>Headstones & Grave Markers</h5>
+							<ul>
+								<li>Granite Headstones</li>
+								<li>Marble Monuments</li>
+								<li>Bronze Plaques</li>
+								<li>Flat Markers</li>
+								<li>Upright Monuments</li>
+								<li>Custom Designs & Engraving</li>
+							</ul>
+							<p class="price">Flat markers from <strong>R5,000</strong><br>Upright from <strong>R12,000</strong><br>Custom from <strong>R25,000</strong><br>(Installation included)</p>
+						</div>
+
+						<div class="pricing-card">
+							<h5>Funeral Programs</h5>
+							<ul>
+								<li>Design Templates</li>
+								<li>Photo Layouts</li>
+								<li>Bi-fold (4 pages)</li>
+								<li>Tri-fold (6 panels)</li>
+								<li>Booklet (8-16 pages)</li>
+								<li>Premium Printing</li>
+							</ul>
+							<p class="price">Bi-fold from <strong>R15</strong> per copy<br>Tri-fold from <strong>R20</strong> per copy<br>Booklets from <strong>R35</strong> per copy<br>(Minimum 25 copies)</p>
+						</div>
+
+						<div class="pricing-card">
+							<h5>Memorial Keepsakes</h5>
+							<ul>
+								<li>Memorial Jewelry</li>
+								<li>Fingerprint Keepsakes</li>
+								<li>Photo Frames</li>
+								<li>Memory Albums</li>
+								<li>Memory Boxes</li>
+								<li>Memorial Cards</li>
+							</ul>
+							<p class="price">Cards from <strong>R10</strong> each<br>Frames from <strong>R200</strong><br>Jewelry from <strong>R500</strong><br>Memory boxes from <strong>R600</strong></p>
+						</div>
+
+						<div class="pricing-card">
+							<h5>Candles & Ceremonial Décor</h5>
+							<ul>
+								<li>Memorial Candles</li>
+								<li>LED Flameless Candles</li>
+								<li>Candle Holders</li>
+								<li>Pedestals & Stands</li>
+								<li>Fabric Draping</li>
+								<li>Guest Books & Signage</li>
+							</ul>
+							<p class="price">Candles from <strong>R50</strong><br>Guest books from <strong>R200</strong><br>Pedestal rental <strong>R150</strong><br>Fabric draping from <strong>R500</strong></p>
+						</div>
+
+						<div class="pricing-card">
+							<h5>Digital Memorial Pages</h5>
+							<ul>
+								<li>Personalized Webpage</li>
+								<li>Photo Galleries</li>
+								<li>Video Tributes</li>
+								<li>Online Guestbook</li>
+								<li>Life Timeline</li>
+								<li>QR Codes for Headstones</li>
+							</ul>
+							<p class="price">Basic (1 year): <strong>R500</strong><br>Premium (lifetime): <strong>R1,500</strong></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="pricing-note">
+					<p><strong>Note:</strong> All prices are starting rates and may vary based on specific requirements, customization, and distance traveled. Contact us for a detailed personalized quote.</p>
+				</div>
+			</section>
+
+			<div class="quote-form-section">
+				<h3 class="form-title">Request Your Personalized Quote</h3>
+				<p class="form-intro">
+					Select the services and products you need below. Our team will prepare a detailed quote 
+					tailored to your requirements and budget. All fields are optional - choose only what you need.
+				</p>
+
+				<form action="#" method="post" class="quote-form" id="quoteForm">
+					<!-- Contact Information -->
+					<section class="form-section" aria-labelledby="contact-info">
+						<h3 id="contact-info" class="section-heading">
+							<span class="section-number">1</span> Your Contact Information
+						</h3>
+						<div class="form-grid">
+							<div class="form-group">
+								<label for="fullName">Full Name <span class="required">*</span></label>
+								<input 
+									type="text" 
+									id="fullName" 
+									name="fullName" 
+									required 
+									placeholder="Enter your full name"
+								/>
+							</div>
+							<div class="form-group">
+								<label for="phone">Phone Number <span class="required">*</span></label>
+								<input 
+									type="tel" 
+									id="phone" 
+									name="phone" 
+									required 
+									placeholder="e.g., 021 123 4567"
+								/>
+							</div>
+							<div class="form-group">
+								<label for="email">Email Address <span class="required">*</span></label>
+								<input 
+									type="email" 
+									id="email" 
+									name="email" 
+									required 
+									placeholder="your.email@example.com"
+								/>
+							</div>
+							<div class="form-group">
+								<label for="urgency">How Soon Do You Need Services?</label>
+								<select id="urgency" name="urgency">
+									<option value="">Please select...</option>
+									<option value="immediate">Immediate (within 24 hours)</option>
+									<option value="1-3days">1-3 days</option>
+									<option value="4-7days">4-7 days</option>
+									<option value="planning">Pre-planning for the future</option>
+								</select>
+							</div>
+						</div>
+					</section>
+
+					<!-- Service Type -->
+					<section class="form-section" aria-labelledby="service-type">
+						<h3 id="service-type" class="section-heading">
+							<span class="section-number">2</span> Service Type
+						</h3>
+						
+						<fieldset class="checkbox-fieldset">
+							<legend>Choose Your Package Type:</legend>
+							<div class="checkbox-grid">
+								<label class="checkbox-label">
+									<input type="checkbox" name="service-package" value="funeral-service" />
+									<span class="checkbox-text">
+										<strong>Funeral Service Package</strong>
+										<small>Complete traditional funeral service</small>
+									</span>
+								</label>
+								<label class="checkbox-label">
+									<input type="checkbox" name="service-package" value="cremation" />
+									<span class="checkbox-text">
+										<strong>Cremation Package</strong>
+										<small>Dignified cremation services</small>
+									</span>
+								</label>
+								<label class="checkbox-label">
+									<input type="checkbox" name="service-package" value="burial" />
+									<span class="checkbox-text">
+										<strong>Burial Package</strong>
+										<small>Traditional burial arrangements</small>
+									</span>
+								</label>
+								<label class="checkbox-label">
+									<input type="checkbox" name="service-package" value="memorial" />
+									<span class="checkbox-text">
+										<strong>Memorial Only</strong>
+										<small>Memorial service without body present</small>
+									</span>
+								</label>
+							</div>
+						</fieldset>
+
+						<fieldset class="checkbox-fieldset">
+							<legend>Choose Specific Services:</legend>
+							<div class="checkbox-grid">
+								<label class="checkbox-label">
+									<input type="checkbox" name="service-option" value="body-preparation" />
+									<span class="checkbox-text">
+										<strong>Body Collection & Preparation</strong>
+										<small>From R3,500</small>
+									</span>
+								</label>
+								<label class="checkbox-label">
+									<input type="checkbox" name="service-option" value="planning" />
+									<span class="checkbox-text">
+										<strong>Funeral Planning Assistance</strong>
+										<small>From R5,000</small>
+									</span>
+								</label>
+								<label class="checkbox-label">
+									<input type="checkbox" name="service-option" value="transport" />
+									<span class="checkbox-text">
+										<strong>Transport (Hearse & Family Cars)</strong>
+										<small>From R2,500</small>
+									</span>
+								</label>
+								<label class="checkbox-label">
+									<input type="checkbox" name="service-option" value="catering" />
+									<span class="checkbox-text">
+										<strong>Catering Services</strong>
+										<small>From R80 per person</small>
+									</span>
+								</label>
+								<label class="checkbox-label">
+									<input type="checkbox" name="service-option" value="flowers" />
+									<span class="checkbox-text">
+										<strong>Floral Arrangements</strong>
+										<small>From R500</small>
+									</span>
+								</label>
+								<label class="checkbox-label">
+									<input type="checkbox" name="service-option" value="event-management" />
+									<span class="checkbox-text">
+										<strong>Event Management</strong>
+										<small>From R3,000</small>
+									</span>
+								</label>
+							</div>
+						</fieldset>
+					</section>
+
+					<!-- Product Selection -->
+					<section class="form-section" aria-labelledby="product-selection">
+						<h3 id="product-selection" class="section-heading">
+							<span class="section-number">3</span> Product Selection
+						</h3>
+						
+						<fieldset class="checkbox-fieldset">
+							<legend>Choose Products You Need:</legend>
+							<div class="checkbox-grid">
+								<label class="checkbox-label">
+									<input type="checkbox" name="product" value="caskets" />
+									<span class="checkbox-text">
+										<strong>Caskets & Coffins</strong>
+										<small>From R3,000</small>
+									</span>
+								</label>
+								<label class="checkbox-label">
+									<input type="checkbox" name="product" value="urns" />
+									<span class="checkbox-text">
+										<strong>Cremation Urns</strong>
+										<small>From R800</small>
+									</span>
+								</label>
+								<label class="checkbox-label">
+									<input type="checkbox" name="product" value="headstones" />
+									<span class="checkbox-text">
+										<strong>Headstones & Grave Markers</strong>
+										<small>From R5,000</small>
+									</span>
+								</label>
+								<label class="checkbox-label">
+									<input type="checkbox" name="product" value="programs" />
+									<span class="checkbox-text">
+										<strong>Funeral Programs</strong>
+										<small>From R15 per copy</small>
+									</span>
+								</label>
+								<label class="checkbox-label">
+									<input type="checkbox" name="product" value="keepsakes" />
+									<span class="checkbox-text">
+										<strong>Memorial Keepsakes</strong>
+										<small>From R10</small>
+									</span>
+								</label>
+								<label class="checkbox-label">
+									<input type="checkbox" name="product" value="digital-memorial" />
+									<span class="checkbox-text">
+										<strong>Digital Memorial Page</strong>
+										<small>From R500</small>
+									</span>
+								</label>
+							</div>
+						</fieldset>
+
+						<fieldset class="checkbox-fieldset">
+							<legend>Preferred Style & Quality Level:</legend>
+							<div class="radio-grid">
+								<label class="radio-label">
+									<input type="radio" name="style" value="standard" checked />
+									<span class="radio-text">
+										<strong>Standard</strong>
+										<small>Simple & Dignified</small>
+									</span>
+								</label>
+								<label class="radio-label">
+									<input type="radio" name="style" value="premium" />
+									<span class="radio-text">
+										<strong>Premium</strong>
+										<small>Elegant & Customizable</small>
+									</span>
+								</label>
+								<label class="radio-label">
+									<input type="radio" name="style" value="luxury" />
+									<span class="radio-text">
+										<strong>Luxury</strong>
+										<small>High-End Design</small>
+									</span>
+								</label>
+								<label class="radio-label">
+									<input type="radio" name="style" value="eco" />
+									<span class="radio-text">
+										<strong>Eco-Friendly</strong>
+										<small>Sustainable Options</small>
+									</span>
+								</label>
+							</div>
+						</fieldset>
+					</section>
+
+					<!-- Additional Options -->
+					<section class="form-section" aria-labelledby="additional-options">
+						<h3 id="additional-options" class="section-heading">
+							<span class="section-number">4</span> Additional Options
+						</h3>
+						
+						<fieldset class="checkbox-fieldset">
+							<legend>Select Additional Services (Optional):</legend>
+							<div class="checkbox-grid">
+								<label class="checkbox-label">
+									<input type="checkbox" name="additional" value="venue" />
+									<span class="checkbox-text">
+										<strong>Venue Hire</strong>
+										<small>Chapel or hall rental</small>
+									</span>
+								</label>
+								<label class="checkbox-label">
+									<input type="checkbox" name="additional" value="leader" />
+									<span class="checkbox-text">
+										<strong>Religious/Spiritual Leader</strong>
+										<small>Officiant services</small>
+									</span>
+								</label>
+								<label class="checkbox-label">
+									<input type="checkbox" name="additional" value="music" />
+									<span class="checkbox-text">
+										<strong>Music Services</strong>
+										<small>Choir, soloist, or recorded</small>
+									</span>
+								</label>
+								<label class="checkbox-label">
+									<input type="checkbox" name="additional" value="decor" />
+									<span class="checkbox-text">
+										<strong>Ceremonial Décor</strong>
+										<small>Candles, draping, stands</small>
+									</span>
+								</label>
+								<label class="checkbox-label">
+									<input type="checkbox" name="additional" value="printed" />
+									<span class="checkbox-text">
+										<strong>Printed Materials</strong>
+										<small>Obituary, thank-you cards</small>
+									</span>
+								</label>
+								<label class="checkbox-label">
+									<input type="checkbox" name="additional" value="streaming" />
+									<span class="checkbox-text">
+										<strong>Live Streaming</strong>
+										<small>Online service broadcast</small>
+									</span>
+								</label>
+								<label class="checkbox-label">
+									<input type="checkbox" name="additional" value="grief-support" />
+									<span class="checkbox-text">
+										<strong>Grief Support Resources</strong>
+										<small>Free for all families</small>
+									</span>
+								</label>
+								<label class="checkbox-label">
+									<input type="checkbox" name="additional" value="photography" />
+									<span class="checkbox-text">
+										<strong>Photography/Videography</strong>
+										<small>Professional documentation</small>
+									</span>
+								</label>
+							</div>
+						</fieldset>
+					</section>
+
+					<!-- Budget & Additional Details -->
+					<section class="form-section" aria-labelledby="budget-details">
+						<h3 id="budget-details" class="section-heading">
+							<span class="section-number">5</span> Budget & Additional Details
+						</h3>
+						
+						<div class="form-grid">
+							<div class="form-group full-width">
+								<label for="budget">Approximate Budget Range</label>
+								<select id="budget" name="budget">
+									<option value="">Please select...</option>
+									<option value="under-10k">Under R10,000</option>
+									<option value="10k-20k">R10,000 - R20,000</option>
+									<option value="20k-35k">R20,000 - R35,000</option>
+									<option value="35k-50k">R35,000 - R50,000</option>
+									<option value="over-50k">Over R50,000</option>
+									<option value="flexible">Flexible / Unsure</option>
+								</select>
+							</div>
+							
+							<div class="form-group full-width">
+								<label for="guestCount">Estimated Number of Guests</label>
+								<input 
+									type="number" 
+									id="guestCount" 
+									name="guestCount" 
+									min="1" 
+									placeholder="e.g., 50"
+								/>
+								<small class="help-text">Helps us estimate catering and venue requirements</small>
+							</div>
+
+							<div class="form-group full-width">
+								<label for="message">Special Requests or Additional Information</label>
+								<textarea 
+									id="message" 
+									name="message" 
+									rows="5" 
+									placeholder="Please share any specific requirements, cultural or religious considerations, or questions you may have..."
+								></textarea>
+								<small class="help-text">Optional but helpful for providing an accurate quote</small>
+							</div>
+						</div>
+					</section>
+
+					<!-- Preferred Contact Method -->
+					<section class="form-section" aria-labelledby="contact-preference">
+						<h3 id="contact-preference" class="section-heading">
+							<span class="section-number">6</span> How Should We Contact You?
+						</h3>
+						
+						<fieldset class="checkbox-fieldset">
+							<legend>Preferred Contact Method:</legend>
+							<div class="radio-grid">
+								<label class="radio-label">
+									<input type="radio" name="contact-method" value="phone" checked />
+									<span class="radio-text">
+										<strong>Phone Call</strong>
+										<small>We'll call you</small>
+									</span>
+								</label>
+								<label class="radio-label">
+									<input type="radio" name="contact-method" value="email" />
+									<span class="radio-text">
+										<strong>Email</strong>
+										<small>Receive quote via email</small>
+									</span>
+								</label>
+								<label class="radio-label">
+									<input type="radio" name="contact-method" value="whatsapp" />
+									<span class="radio-text">
+										<strong>WhatsApp</strong>
+										<small>Message via WhatsApp</small>
+									</span>
+								</label>
+								<label class="radio-label">
+									<input type="radio" name="contact-method" value="any" />
+									<span class="radio-text">
+										<strong>Any Method</strong>
+										<small>Your choice</small>
+									</span>
+								</label>
+							</div>
+						</fieldset>
+					</section>
+
+					<!-- Submit Button -->
+					<div class="form-actions">
+						<button type="submit" class="form-button primary">
+							<span>📋</span> Request Detailed Quote
+						</button>
+						<p class="form-note">
+							We typically respond within 2-4 hours during business hours. 
+							For urgent requests, please call us directly at <strong>+27 (0)21 123 4567</strong>
+						</p>
+					</div>
+				</form>
+			</div>
 		</main>
 
 		<!-- Footer -->
