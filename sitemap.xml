@@ -22,7 +22,7 @@
 
     <!-- Contact Page -->
     <url>
-        <loc>https://www.grimreaperandco.co.za/contact.html</loc>
+        <loc>https://www.grimreaperandco.co.za/pages/contact.html</loc>
         <lastmod>2025-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -30,7 +30,15 @@
 
     <!-- Quote Page -->
     <url>
-        <loc>https://www.grimreaperandco.co.za/quote.html</loc>
+        <loc>https://www.grimreaperandco.co.za/pages/quote.html</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Enquiry Page -->
+    <url>
+        <loc>https://www.grimreaperandco.co.za/pages/enquiry.html</loc>
         <lastmod>2025-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -38,7 +46,7 @@
 
     <!-- FAQs Page -->
     <url>
-        <loc>https://www.grimreaperandco.co.za/faqs.html</loc>
+        <loc>https://www.grimreaperandco.co.za/pages/faqs.html</loc>
         <lastmod>2025-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
