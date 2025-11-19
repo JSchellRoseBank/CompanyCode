@@ -121,6 +121,56 @@ Future updates will include **Part 2** and **Part 3** with additional functional
 
 ## Change Log
 
+**v1.0 – Major Feature Update & Enhancements**
+
+-   **Interactive Elements:**
+    -   Added accordion functionality for Services & Products sections with single-open behavior
+    -   Implemented modal dialogs for detailed service/product information with comprehensive pricing
+    -   Integrated Leaflet.js interactive map showing Cape Town location with custom markers
+    -   Added scroll animations and CSS transitions throughout the site
+    -   Removed hero section animations for cleaner appearance
+-   **SEO Optimization:**
+    -   Added comprehensive meta tags (description, keywords, Open Graph, Twitter Card)
+    -   Implemented JSON-LD structured data for FuneralHome schema
+    -   Created robots.txt file for search engine crawlers
+    -   Created sitemap.xml for all pages
+    -   Added canonical URLs and favicon references
+    -   Updated meta tags across all HTML pages (quote.html, faqs.html)
+-   **Performance Improvements:**
+    -   Implemented lazy loading for images using Intersection Observer API
+    -   Added image optimization with loading states and placeholders
+    -   Set fetchpriority="high" for above-the-fold images
+    -   Added width/height attributes to prevent layout shift
+-   **Forms & Validation:**
+    -   Created enquiry.html page with multi-step form and conditional logic
+    -   Enhanced contact.html with comprehensive validation
+    -   Implemented formValidation.js for client-side validation
+    -   Added real-time character counters and error messages
+    -   Implemented mailto: functionality for contact form
+    -   Added visual feedback (success/error states, loading spinners)
+-   **Quote Page Enhancements:**
+    -   Added comprehensive pricing section with 14 detailed pricing cards
+    -   Completely redesigned quote form with 6 organized sections
+    -   Added contact information collection (name, phone, email, urgency)
+    -   Implemented card-style checkboxes with hover effects
+    -   Added budget range selector and guest count input
+    -   Included contact preference selection (phone, email, WhatsApp)
+    -   Added numbered section badges and gradient submit button
+    -   Displayed pricing inline with each service/product option
+-   **Styling & UI/UX:**
+    -   Fixed navbar z-index to always show above other elements
+    -   Enhanced accordion styles with smooth transitions
+    -   Added modal overlay with fade-in animations
+    -   Styled map section with location cards and custom markers
+    -   Improved form styling with better spacing and visual hierarchy
+    -   Added responsive grid layouts for pricing and form sections
+    -   Enhanced button styles with hover effects and gradients
+-   **Code Organization:**
+    -   Created modular JavaScript files (accordion.js, modal.js, map.js, animations.js, lazyload.js)
+    -   Organized CSS with separate files for different page sections
+    -   Removed unused features (gallery/lightbox, search, filter/sort)
+    -   Cleaned up codebase for better maintainability
+
 **v0.5**
 
 -   Updated responsive media queries and 1 more
