@@ -221,12 +221,13 @@ With just a few clicks, we offer quick and transparent quotes, giving you more t
 
 ## References
 
-    • Peninsula Funerals, PF, 2025. Peninsula Funerals. Available at: [https://peninsulafunerals.co.za/](https://peninsulafunerals.co.za/) (Accessed: 27 August 2025)
-    • AVBOB. (2025). Funeral Services. Available at: [https://www.avbob.co.za/funeral-services](https://www.avbob.co.za/funeral-services) (27 August 2025)
-    • Quest Funeral Services, QFS (2025). Our Services. Available at: [https://www.questfuneralservices.co.za/our-services](https://www.questfuneralservices.co.za/our-services) (Accessed: 27 August 2025)
-    • Royal Funerals SA, RFSA, (2025). About – Royal Funerals. Available at: [https://www.royalfuneralssa.co.za/about/](https://www.royalfuneralssa.co.za/about/) (Accessed: 27 August 2025)
-    • Google Search Central, GSC, (2025). Search Engine Optimization (SEO) Starter Guide. Available at: [https://developers.google.com/search/docs/fundamentals/seo-starter-guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide) (Accessed: 15 November 2025)
-    • MDN Web Docs, MDNWD, (2025). HTML performance optimization. Available at: [https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/HTML](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/HTML) (Accessed: 16 November 2025)
-    • MDN Web Docs, MDNWD, (2025). CSS performance optimization. Available at: [https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/CSS](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/CSS) (Accessed: 16 November 2025)
-    • MDN Web Docs, MDNWD, (2025). JavaScript performance optimization. Available at: [https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/JavaScript](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/JavaScript) (Accessed: 16 November 2025)
+• Peninsula Funerals, PF, 2025. Peninsula Funerals. Available at: [https://peninsulafunerals.co.za/](https://peninsulafunerals.co.za/) (Accessed: 27 August 2025)
+• AVBOB. (2025). Funeral Services. Available at: [https://www.avbob.co.za/funeral-services](https://www.avbob.co.za/funeral-services) (27 August 2025)
+• Quest Funeral Services, QFS (2025). Our Services. Available at: [https://www.questfuneralservices.co.za/our-services](https://www.questfuneralservices.co.za/our-services) (Accessed: 27 August 2025)
+• Royal Funerals SA, RFSA, (2025). About – Royal Funerals. Available at: [https://www.royalfuneralssa.co.za/about/](https://www.royalfuneralssa.co.za/about/) (Accessed: 27 August 2025)
+• Google Search Central, GSC, (2025). Search Engine Optimization (SEO) Starter Guide. Available at: [https://developers.google.com/search/docs/fundamentals/seo-starter-guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide) (Accessed: 15 November 2025)
+• MDN Web Docs, MDNWD, (2025). HTML performance optimization. Available at: [https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/HTML](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/HTML) (Accessed: 16 November 2025)
+• MDN Web Docs, MDNWD, (2025). CSS performance optimization. Available at: [https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/CSS](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/CSS) (Accessed: 16 November 2025)
+• MDN Web Docs, MDNWD, (2025). JavaScript performance optimization. Available at: [https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/JavaScript](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/JavaScript) (Accessed: 16 November 2025)
+
 
